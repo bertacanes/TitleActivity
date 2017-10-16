@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class TitleActivity extends AppCompatActivity {
 
-    private String title = "Aquest és el títol inicial..."
+    private String title = "Aquest és el títol inicial...";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
