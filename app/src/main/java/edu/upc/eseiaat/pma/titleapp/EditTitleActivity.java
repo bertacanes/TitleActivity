@@ -23,7 +23,9 @@ public class EditTitleActivity extends AppCompatActivity {
 
     public void saveTitle(View view){
         String new_title = edit_title.getText().toString();
-        Intent intent = new Intent();
-        intent.putExtra("title", new_title);
+        Intent data = new Intent();
+        data.putExtra("title", new_title);
+        setResult(RESULT_OK, data);
+        finish();
     }
 }
