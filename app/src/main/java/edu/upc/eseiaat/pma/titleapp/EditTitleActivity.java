@@ -15,6 +15,7 @@ public class EditTitleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_title);
 
+        //(II)
         Intent intent = getIntent();
         String title = intent.getStringExtra("title");
         edit_title = (EditText) findViewById(R.id.edit_title);
@@ -22,6 +23,7 @@ public class EditTitleActivity extends AppCompatActivity {
     }
 
     public void saveTitle(View view){
+        //(III)
         String new_title = edit_title.getText().toString();
         Intent data = new Intent();
         data.putExtra("title", new_title);
