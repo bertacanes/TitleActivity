@@ -4,25 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.upc.eseiaat.pma.titleapp.TitleActivity">
-
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="27dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="27dp"
-        android:text="Aquest és el titol i es pot editar"
-        android:textSize="40sp"
-        android:layout_alignRight="@+id/btn_edit"
-        android:layout_alignEnd="@+id/btn_edit" />
+    tools:context="edu.upc.eseiaat.pma.titleapp.EditTitleActivity">
 
     <Button
-        android:id="@+id/btn_edit"
+        android:id="@+id/btn_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -32,4 +17,18 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="Button" />
+
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="27dp"
+        android:layout_toLeftOf="@+id/btn_save"
+        android:layout_toStartOf="@+id/btn_save"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
 </RelativeLayout>
